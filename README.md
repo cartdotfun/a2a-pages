@@ -1,8 +1,8 @@
-# @cart.fun/agent-landing
+# @cart.fun/a2a-pages
 
 > Generate beautiful developer documentation pages from A2A agent cards
 
-[![npm version](https://img.shields.io/npm/v/@cart.fun/agent-landing.svg)](https://www.npmjs.com/package/@cart.fun/agent-landing)
+[![npm version](https://img.shields.io/npm/v/@cart.fun/a2a-pages.svg)](https://www.npmjs.com/package/@cart.fun/a2a-pages)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -17,14 +17,14 @@
 ## Installation
 
 ```bash
-npm install @cart.fun/agent-landing
+npm install @cart.fun/a2a-pages
 ```
 
 ## Quick Start
 
 ```typescript
 import express from 'express'
-import { createAgentLanding } from '@cart.fun/agent-landing'
+import { createAgentLanding } from '@cart.fun/a2a-pages'
 
 const app = express()
 
@@ -107,7 +107,7 @@ app.get('/', createAgentLanding('./agent-card.json', {
 Create your own theme by providing a Theme object:
 
 ```typescript
-import { createAgentLanding, type Theme } from '@cart.fun/agent-landing'
+import { createAgentLanding, type Theme } from '@cart.fun/a2a-pages'
 
 const myTheme: Theme = {
   colors: {
@@ -135,7 +135,7 @@ app.get('/', createAgentLanding('./agent-card.json', { theme: myTheme }))
 For more control, use the generator function directly:
 
 ```typescript
-import { generateLandingPage, darkTheme } from '@cart.fun/agent-landing'
+import { generateLandingPage, darkTheme } from '@cart.fun/a2a-pages'
 
 const html = generateLandingPage(agentCard, {
   theme: darkTheme,
@@ -159,7 +159,7 @@ import {
   renderPaymentFlow,
   renderFooter,
   darkTheme
-} from '@cart.fun/agent-landing'
+} from '@cart.fun/a2a-pages'
 
 // Build your own page structure
 const hero = renderHero(agentCard, darkTheme)
