@@ -1,6 +1,6 @@
 # @cart.fun/a2a-pages
 
-> Generate beautiful developer documentation pages from A2A agent cards
+> Generate beautiful developer documentation pages from agent card JSON
 
 [![npm version](https://img.shields.io/npm/v/@cart.fun/a2a-pages.svg)](https://www.npmjs.com/package/@cart.fun/a2a-pages)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
